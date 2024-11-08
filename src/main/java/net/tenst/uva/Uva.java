@@ -1,9 +1,10 @@
 package net.tenst.uva;
 
-import net.fabricmc.api.ModInitializer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import net.fabricmc.api.ModInitializer;
+import net.tenst.uva.item.ModItems;
 
 public class Uva implements ModInitializer {
 	public static final String MOD_ID = "uva";
@@ -20,5 +21,6 @@ public class Uva implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModItems.initialize();
 	}
 }
